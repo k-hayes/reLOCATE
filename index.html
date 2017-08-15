@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>ReLocate | ReLive</title>
 
@@ -26,21 +23,10 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
 
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-
 <body>
 
     <!-- Navigation -->
@@ -67,17 +53,24 @@
                 <br>
                 <div class="col-md-6 col-sm-8" style="margin: 0 auto;">
                 <div class="input-text-wrap">
-                <input type="text" class="form-control" id="user-input" placeholder="Location">
-                <a class="btn btn-primary btn-lg" href="results.html" id="submit"><i class="material-icons">search</i>
+                <input type="text" class="form-control" id="user-input" value="" placeholder="Location">
+                <br>
+                <a class="btn btn-primary btn-lg" href="" id="submit"><i class="material-icons">search</i>
                 </a>
             </div>
         </div>
+
+        <div id="map" style="display: none;"></div>
     </header>
 
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAQLsPcTdonejzNguTbGTF7CP57ux4FzY&libraries=places&callback=initAutocomplete" async defer></script>
+    <script type="text/javascript" src="js/googlemaps.js"></script>
+
     <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/tether.js"></script>
-    <script src="js/bootstrap/js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.js"></script>
@@ -88,5 +81,4 @@
     <script src="js/creative.js"></script>
 
 </body>
-
 </html>
