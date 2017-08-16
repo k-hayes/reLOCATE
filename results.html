@@ -13,14 +13,14 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
     <link href="css/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
     <!-- jQuery -->
@@ -29,33 +29,29 @@
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/reLOCATE_logo_white70.png" style="width: 200px;"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/reLOCATE_logo_white70.png" id="logo"></a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#main">Location</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#services">Map</a>
                     <li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Stuff</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#weather">Weather</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="masthead" style="height: 50%;">
+    <header class="masthead" id="main">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading-results">Welcome to <span id="city-name"></span></h1>
@@ -64,25 +60,12 @@
                 <br>
                 <div class="col-md-5" style="margin: 0 auto;">
                 <div class="input-text-wrap">
-                <input type="text" class="form-control" id="user-input" value="" placeholder="Location"><a class="btn btn-primary btn-lg" href="#map" id="submit-results"><i class="material-icons">search</i>
+                <input type="text" class="form-control" id="user-input" value="" placeholder="Location"><a class="btn btn-primary btn-lg" id="submit-results"><i class="material-icons">search</i>
                 </a>
                 <br>
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading text-white">Need to update your address through USPS?</h2>
-                    <hr class="light">
-                    <!-- <p class="text-faded"></p> -->
-                    <a class="btn btn-default btn-xl sr-button" href="https://moversguide.usps.com/icoa/home/icoa-main-flow.do?execution=e2s1&_flowId=icoa-main-flow" target="_blank">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="services">
         <div class="container">
@@ -95,9 +78,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+
+            <!-- Temporary -->
+
+                <!-- <div class="col-lg-3 col-md-6 text-center"> -->
+                <div class="col-lg-12 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                    <h3>COMING SOON</h3>
+                 <!--        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <h3>Sturdy Templates</h3>
                         <p class="text-muted">Our templates are updated regularly so they don't break.</p>
                     </div>
@@ -124,52 +112,42 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="no-padding">
-        <div id="map"></div>
+            <div id="map"></div>
     </section>
 
-    <div class="call-to-action bg-dark">
-        <div class="container text-center">
-            <h2>#</h2>
-            <a class="btn btn-default btn-xl sr-button" href="#">#</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-            <h1>Weather</h1>
-            <h2>City: <span id="city"></span></h2>
-            <h2>Main Weather: <span id="main_weather"></span></h2>
-            <h2>Description: <span id="description_weather"></span></h2>
-            <img id="weather_image" src="">
-            <h2>Temperature: <span id="temperature"></span></h2>
-            <h2>Pressure: <span id="pressure"></span></h2>
-            <h2>Humidity: <span id="humidity"></span></h2>
-        </div>
-    </div>
-
-    <section id="footer">
+        <section class="bg-primary" id="usps">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <!-- <h2 class="section-heading">Let's Get In Touch!</h2> -->
-                    <hr class="primary">
-                    <p> &copy; 2017 Copyright Cody Burmeister, Kate Hayes, Joann Do, Delphine Dara</p>
+                    <h2 class="section-heading text-white">Need to update your address through USPS?</h2>
+                    <hr class="light">
+                    <a class="btn btn-default btn-xl sr-button" href="https://moversguide.usps.com/icoa/home/icoa-main-flow.do?execution=e2s1&_flowId=icoa-main-flow" target="_blank">Get Started!</a>
                 </div>
-<!--                 <div class="col-lg-4 offset-lg-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">no@email.com</a></p>
-                </div> -->
             </div>
         </div>
     </section>
+
+    <div class="row" id="weather">
+        <div class="col-lg-12 col-lg-offset-2 text-center">
+            <h1>Current Weather: <span id="main_weather"></span></h1>
+            <img id="weather_image" src="">
+            <h2>Temperature: <span id="temperature"></span></h2>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center" id="copyright">
+                    <p> &copy; 2017 Copyright Cody Burmeister, Kate Hayes, Joann Do, Delphine Dara</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAQLsPcTdonejzNguTbGTF7CP57ux4FzY&libraries=places&callback=initAutocomplete" async defer></script>
@@ -188,7 +166,7 @@
     <script src="js/scrollreveal.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- Javascript-->
     <script src="js/creative.js"></script>
 
 </body>

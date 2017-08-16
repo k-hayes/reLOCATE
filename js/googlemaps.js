@@ -68,4 +68,11 @@ $("#submit").on("click", function(event) {
       });
       map.fitBounds(bounds);
     });
+
+    window.onresize = function() {
+    var currCenter = map.getCenter();
+    google.maps.event.trigger(map, 'resize');
+    map.setCenter(currCenter);
+    };
+    
   }
